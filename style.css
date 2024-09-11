@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+    --white: hsl(0, 0%, 100%); 
+    --green: hsl(75, 94%, 57%);
+    --inter-font: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--inter-font);
+    
+}
+
+.container {
+    background-color: var(--grey-900);
+    color: var(--white);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 384px;
+    max-height: 610px;
+    background-color: var(--grey-800);
+}
+.avatar {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 16px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+.location {
+    font-size: 14px;
+    color: var(--green);
+    font-weight: 700;
+    padding-bottom: 16px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 12px;
+    width: 100%;
+    padding-top: 16px;
+}
+
+.social-links .link {
+    background-color: var(--grey-700);
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    font-weight: 700;
+    transition: all ease-in 0.4s;
+}
+.social-links .link:hover {
+    background-color: var(--green);
+    color: var(--grey-900);
+    cursor: pointer;
+}
